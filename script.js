@@ -16,7 +16,7 @@ function updateAreas(areas) {
 // Fetch areas from the external JSON
 async function fetchAreas() {
     try {
-        const response = await fetch('https://www.oref.org.il/warningMessages/alert/Alerts.json'); // Replace with the actual URL
+        const response = await fetch('https://www.mako.co.il/Collab/amudanan/alerts.json'); // Replace with the actual URL
         const jsonData = await response.json();
         const areas = jsonData.data;
         updateAreas(areas);
